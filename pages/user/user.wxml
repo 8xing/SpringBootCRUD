@@ -1,0 +1,18 @@
+<!--pages/Plist/feedback/feedback.wxml-->
+
+<view>
+  <view>
+  <view class="title"></view>  
+    <form bindsubmit="OKsubmit">
+      <view class="text">
+        <input style="display: none;" type="text" name="id" id="acount" value="{{contents.id}}"/>
+      名字：<input type="text" name="name" id="acount" value="{{contents.name}}"/>
+      性别：<input type="text" name="sex" id="pw" value="{{contents.sex}}"/>
+      年龄：<input type="text" name="age" id="pw" value="{{contents.age}}"/>
+      籍贯：<input type="text" name="address" id="pw" value="{{contents.address}}"/>
+      </view>
+      <button form-type="submit" type="primary">修改</button>
+    </form>
+  </view>
+</view>
+

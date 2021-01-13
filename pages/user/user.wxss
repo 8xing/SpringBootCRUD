@@ -1,0 +1,29 @@
+/* pages/text/text.wxss */
+page{
+  background-color: rgba(55, 02, 00, 0.5);
+  background-image: url("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=791782124,1178216882&fm=26&gp=0.jpg");
+  background-size: auto;
+}
+
+button[type="primary"]{
+  border-radius: 50px;
+  width: 50%;
+  margin-top: 80rpx;
+  margin-bottom: 100rpx;
+}
+
+input{
+  margin: auto;
+  border: 1px solid rgb(97, 95, 95);
+  width: 80%;
+  text-align: center;
+  height: 90rpx;
+  border-radius: 30rpx;
+  background-color: rgba(87, 87, 87,0.4);
+}
+#pw{
+  margin-top: 10px;
+}
+.text{
+  margin-top: 50px;
+}

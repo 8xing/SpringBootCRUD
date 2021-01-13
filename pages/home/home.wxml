@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<view class="top">
+   <!-- <view class="search"></view> -->
+  <!--swiper组件-->
+  <view>
+    <swiper indicator-dots="{{true}}"  class="swiperAttribute"  circular="{{true}}"
+      autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}"
+      indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}">
+      <block wx:for="{{background}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- <view class="notice">{{noticeTitle}}<text class="noti">{{noticeText}}</text></view> -->
+  <view class="partition"></view>
+</view>
+<view class="tip"><text>全部信息</text></view>
+
+  <!-- 文章 -->
+<view class="content">
+  <block wx:for="{{contents}}" wx:key="index">
+    <navigator class="info" url="/pages/Plist/text/text?id={{item.id}}">
+      <view class="title">{{item.title}}</view>
+     <view class="article">{{item.content}}</view>
+      <view class="person">
+        <view class="img"><image src="{{item.photo}}"></image></view>
+        <view class="nick">{{item.nick}}</view>
+      </view>
+  </navigator>
+  </block>
+</view>
+
+

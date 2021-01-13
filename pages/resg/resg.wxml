@@ -1,0 +1,20 @@
+<!--pages/Plist/feedback/feedback.wxml-->
+
+<view>
+  <view>
+  <view class="title"></view>  
+    <form bindsubmit="OKsubmit">
+      <view class="text">
+        用户id：<input type="text" name="uid" id="acount" />
+      账户名：<input type="text" name="account" id="acount" />
+      密码：<input type="text" name="password" id="pw" />
+      手机号:<input type="text" name="phone" id="pw" />
+      邮箱:<input type="text" name="email" id="pw" />
+      gitee账号:<input type="text" name="gitee" id="pw" />
+      github账号:<input type="text" name="github" id="pw" />
+      </view>
+      <button form-type="submit" type="primary">注册</button>
+    </form>
+  </view>
+</view>
+

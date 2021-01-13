@@ -1,0 +1,49 @@
+<!--pages/home/home.wxml-->
+<view class="top">
+   <!-- <view class="search"></view> -->
+  <!--swiper组件-->
+  <view>
+    <swiper indicator-dots="{{true}}"  class="swiperAttribute"  circular="{{true}}"
+      autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}"
+      indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}">
+      <block wx:for="{{background}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- <view class="notice">{{noticeTitle}}<text class="noti">{{noticeText}}</text></view> -->
+  <view class="partition"></view>
+</view>
+<view class="tip"><text>全部信息</text></view>
+
+  <!-- 文章 -->
+<view class="content">
+  <view class="left">
+    <view id="text">用户ID:{{contents.uid}}</view>
+    <view id="text">账号:{{contents.account}}</view>
+  <view id="text">密码:{{contents.password}}</view>
+  <view id="text">手机号:{{contents.phone}}</view>
+  <view id="text">邮箱:{{contents.email}}</view>
+  <view id="text">账号:{{contents.gitee}}</view>
+  </view>
+  <view class="right">
+    <view id="text">github账号:{{contents.github}}</view>
+    <view id="text">用户名:{{contents.user.name}}</view>
+    <view id="text"> 年龄:{{contents.user.age}}</view>
+<view id="text">性别:{{contents.user.sex}}</view>
+<view id="text">籍贯:{{contents.user.address}}</view>
+
+  </view>
+  <!-- {{contents.id}} -->
+
+<!-- {{contents.user.id}} -->
+
+</view>
+<view id="btn"> 
+  <button bindtap="delete" id='{{contents.account}}'>删除</button>
+<button bindtap="user" id='{{contents.account}}'>修改用户信息</button>
+<button bindtap="account" id='{{contents.account}}'>修改账号信息</button>
+</view>
+

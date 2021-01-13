@@ -1,0 +1,16 @@
+<!--pages/Plist/feedback/feedback.wxml-->
+
+<view>
+  <view>
+  <view class="title"></view>  
+    <form bindsubmit="OKsubmit">
+      <view class="text">
+      <input type="text" name="account" id="acount" />
+      <input type="password" name="password" id="pw" />
+      </view>
+      <button form-type="submit" type="primary">登录</button>
+      <button type="button" bindtap="resg">注册</button>
+    </form>
+  </view>
+</view>
+

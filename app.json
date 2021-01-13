@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/feedback/feedback",
+    "pages/home/home",
+    "pages/person/person",
+    "pages/like/like",
+    "pages/user/user"
+
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffb1cf",
+    "navigationBarTitleText": "笔记",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#0f7866",
+    "borderStyle": "black",
+    "backgroundColor": "#ffb1cf",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index-.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/person.png",
+        "iconPath": "images/person-.png",
+        "pagePath": "pages/person/person",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "images/person.png",
+        "iconPath": "images/person-.png",
+        "pagePath": "pages/like/like",
+        "text": "账户"
+      }
+    ]
+  }
+}

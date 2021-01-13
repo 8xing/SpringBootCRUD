@@ -1,0 +1,20 @@
+<!--pages/Plist/feedback/feedback.wxml-->
+
+<view>
+  <view>
+  <view class="title"></view>  
+    <form bindsubmit="OKsubmit">
+      <view class="text">
+        <input style="display: none;" type="text" name="uid" id="acount" value="{{contents.uid}}"/>
+      账户名：<input type="text" name="account" id="acount" value="{{contents.account}}"/>
+      密码：<input type="text" name="password" id="pw" value="{{contents.password}}"/>
+      手机号:<input type="text" name="phone" id="pw" value="{{contents.phone}}"/>
+      邮箱:<input type="text" name="email" id="pw" value="{{contents.email}}"/>
+      gitee账号:<input type="text" name="gitee" id="pw" value="{{contents.gitee}}"/>
+      github账号:<input type="text" name="github" id="pw" value="{{contents.github}}"/>
+      </view>
+      <button form-type="submit" type="primary">修改</button>
+    </form>
+  </view>
+</view>
+
